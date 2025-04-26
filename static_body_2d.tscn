@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://tv7dumqtnlq0"]
+
+[ext_resource type="Texture2D" uid="uid://bvq3ye32pedjm" path="res://assets/Crate game assets/Crates etc/Barrel.png" id="1_yjt17"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ypqmy"]
+size = Vector2(27.5, 50.5)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.499977, -0.625031)
+scale = Vector2(0.0953946, 0.100694)
+texture = ExtResource("1_yjt17")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.249931, -0.500061)
+shape = SubResource("RectangleShape2D_ypqmy")

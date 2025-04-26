@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3 uid="uid://cyh0sj2viyu23"]
+
+[ext_resource type="PackedScene" uid="uid://c4mr3gx4duwdv" path="res://scene/hero.tscn" id="1_5kiuu"]
+[ext_resource type="Texture2D" uid="uid://cbp8sidd5mxt4" path="res://assets/Crate game assets/Background/Background.png" id="1_dbls1"]
+[ext_resource type="PackedScene" uid="uid://tv7dumqtnlq0" path="res://static_body_2d.tscn" id="3_33cqm"]
+
+[node name="game" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -290.0
+offset_top = -166.0
+offset_right = 287.0
+offset_bottom = 157.0
+color = Color(0, 0, 0, 1)
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(-3.74999, -2.50004)
+scale = Vector2(0.355793, 0.129297)
+texture = ExtResource("1_dbls1")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-2, -4)
+zoom = Vector2(2, 2)
+
+[node name="Hero" parent="." instance=ExtResource("1_5kiuu")]
+position = Vector2(-128, 56)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("3_33cqm")]
+position = Vector2(0, 120)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("3_33cqm")]
+position = Vector2(80, -184)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("3_33cqm")]
+position = Vector2(80, 104)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("3_33cqm")]
+position = Vector2(0, -168)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("3_33cqm")]
+position = Vector2(160, 88)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("3_33cqm")]
+position = Vector2(-128, 120)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("3_33cqm")]
+position = Vector2(-72, -136)
